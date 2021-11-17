@@ -39,5 +39,12 @@ while(node2.next!=null&&node2.next.next!=null){
 ## 两个单链表相交的问题
 ![image](https://user-images.githubusercontent.com/43565774/142204613-79d522e5-27e2-4b7d-8835-b3b9a72f6109.png)
 
+先根据上面的方法判断两个链表有没有环。
+如果两个链表都没有环的话，肯定不会相交的。（不存在两个next指针的node）
+
+
+
+
+
 
 
