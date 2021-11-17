@@ -27,5 +27,17 @@ while(node2.next!=null&&node2.next.next!=null){
 
 ![image](https://user-images.githubusercontent.com/43565774/142203370-5b7792a7-ff35-498e-8c26-ffbb7177ca83.png)
 
+## 单链表是否有环的问题
+流程：一开始快慢指针都在开始节点处。快指针走两步，慢指针走一步。然后一直走。如果相遇，快指针回到开始节点处，开始走一步，慢指针也走一步，下一次相遇的时候就是环的入口。
+ 通过计算a和b走的位置可以推导出来。
+ ![image](https://user-images.githubusercontent.com/43565774/142207642-041fc64c-815b-4c76-9b94-c4006bf3a1fc.png)
+
+
+![image](https://user-images.githubusercontent.com/43565774/142204359-3b6bd820-aa26-421d-8915-1c57cb0e0c44.png)
+
+
 ## 两个单链表相交的问题
 ![image](https://user-images.githubusercontent.com/43565774/142204613-79d522e5-27e2-4b7d-8835-b3b9a72f6109.png)
+
+
+
