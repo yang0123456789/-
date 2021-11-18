@@ -63,6 +63,37 @@ while(node2.next!=null&&node2.next.next!=null){
 
 ## 非递归遍历
 自己进行压栈的操作。
+- 先序遍历：
+头结点放入。栈弹出一个头节点弹出，然后打印，然后右节点加入栈中，左节点加入栈中。周而复始直到栈中元素为空。
+注意先压右节点再压左节点
+
+![image](https://user-images.githubusercontent.com/43565774/142418160-c72f1041-1001-4b4b-9d8a-830208e8a8d0.png)
+
+- 中序遍历
+
+
+左子树一溜烟儿进栈，相当于找到最左子节点，然后弹出，打印。然后右节点进栈，右节点的左子节点跟着一溜烟儿进栈。然后返回开始周而复始。直到栈中元素为空。
+
+![image](https://user-images.githubusercontent.com/43565774/142419929-989b9ca9-3c3c-49d7-8a69-b9ece28decd9.png)
+
+
+![image](https://user-images.githubusercontent.com/43565774/142420645-4a4cd13f-3eed-4925-9534-616ff213b190.png)
+
+
+
+- 后续遍历
+
+借助一个辅助的栈，按照先序遍历的方法压栈，改成弹出一个节点以后放入到辅助栈中，然后先压右边再压左边子节点的思路。最后压栈为空的时候，挨个弹出辅助栈，就成了后续遍历了。
+
+![image](https://user-images.githubusercontent.com/43565774/142418738-d23990ea-809d-4c7c-8846-88d565339640.png)
+![image](https://user-images.githubusercontent.com/43565774/142419498-75ea6f21-e8d5-4138-b107-4ee68a101585.png)
+
+## 求二叉树的宽度
+层次遍历，统计栈的长度。
+或者搞一个队列，搞一个hashmap，key为node，value为层数。然后按照层次遍历，统计每一层的数量。
+![image](https://user-images.githubusercontent.com/43565774/142424040-fe0736b0-dda3-4f43-b2da-d90960f143b3.png)
+
+如果就是用一个队列的话，可以搞两个变量，一个记录当前层最后一个node，一个记录下一层最后一个node。当前遍历的节点不是当前层最后一个node，在将左右孩子加入到队列的时候，就更新下一层最后一个node。如果等于当前层最后一个node，则将左右孩子入队列以后，当前最后一个node指向下一层最后一个node，下一层最后一个node志为空。同时在这个过程中记录节点的个数，更新最大宽度。
 
 
 
