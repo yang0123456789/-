@@ -57,5 +57,12 @@ while(node2.next!=null&&node2.next.next!=null){
 ![image](https://user-images.githubusercontent.com/43565774/142336010-5d834c73-3d6a-476f-808f-f1582a387e9c.png)
 
 
+# 二叉树
+## 递归遍历
+![image](https://user-images.githubusercontent.com/43565774/142337278-120e5275-fd69-415a-8cc1-31a7a2dcb965.png)
+
+## 非递归遍历
+自己进行压栈的操作。
+
 
 
