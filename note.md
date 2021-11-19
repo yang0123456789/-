@@ -111,3 +111,35 @@ while(node2.next!=null&&node2.next.next!=null){
 如果有一个孩子左右两个孩子不双全，则下一层所有的节点都应该是叶子节点
 
 ![image](https://user-images.githubusercontent.com/43565774/142552913-816c0a18-a18a-4709-b68c-8fbcc35c3acc.png)
+
+![image](https://user-images.githubusercontent.com/43565774/142622371-a335cd2a-b2d6-4164-9071-b8d0dc8dc601.png)
+
+## 判断一个树是不是平衡二叉树
+左右子树高度差不超过1，每个节点都适用
+![image](https://user-images.githubusercontent.com/43565774/142624118-6515eadb-c5a3-435a-b87a-eb4e22641776.png)
+
+![image](https://user-images.githubusercontent.com/43565774/142624352-51675375-48d2-4f30-96e9-f397ce8ec179.png)
+
+套路是开始条件+最终放回值+左右信息递归
+
+
+## 判断一个树是不是平衡二叉树
+
+![image](https://user-images.githubusercontent.com/43565774/142628229-9a4b4037-1d21-491c-927a-33fbd6bb74c6.png)
+
+
+![image](https://user-images.githubusercontent.com/43565774/142627597-601d6bf6-94d3-4aaf-b6a5-3f8f38207c8d.png)
+
+**树形DP**
+
+## 判断一个数是不是满二叉树
+思路是看一下这个树的节点的总数是不是高度的二的次方加一。
+子节点返回自己的高度和节点的个数。
+
+![image](https://user-images.githubusercontent.com/43565774/142629204-75121bf2-53ad-41ee-a030-8f2e1847ef90.png)
+
+![image](https://user-images.githubusercontent.com/43565774/142629079-02ef35ea-496f-40a4-9fcd-22d237a8dc95.png)
+
+
+## 给定一棵树的两个节点，求两个节点的最近公共祖先。
+
