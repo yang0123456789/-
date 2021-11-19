@@ -95,5 +95,19 @@ while(node2.next!=null&&node2.next.next!=null){
 
 如果就是用一个队列的话，可以搞两个变量，一个记录当前层最后一个node，一个记录下一层最后一个node。当前遍历的节点不是当前层最后一个node，在将左右孩子加入到队列的时候，就更新下一层最后一个node。如果等于当前层最后一个node，则将左右孩子入队列以后，当前最后一个node指向下一层最后一个node，下一层最后一个node志为空。同时在这个过程中记录节点的个数，更新最大宽度。
 
+## 看一个二叉树是不是搜索二叉树
+中序遍历是升序的就是搜索二叉树。设置一个全局变量，表示上一个遍历的节点的值，如果当前节点是空，返回TRUE。递归左子树。如果左子树返回FALSE，就返回FALSE，如果左子树返回TRUE，看当前节点的值是否大于全局变量，如果小于，则返回FALSE。如果大于，设置全局变量为当前节点的值，递归右子树，看右子树是不是。
 
+![image](https://user-images.githubusercontent.com/43565774/142551766-b9e54eb3-117f-4af1-ac8c-15129017db87.png)
 
+![image](https://user-images.githubusercontent.com/43565774/142552317-b11b34d8-e78a-4a4d-9b88-120def384490.png)
+非递归
+非递归的方式：
+![image](https://user-images.githubusercontent.com/43565774/142552433-3abacbf8-2917-47e5-9bef-6f5c2694490e.png)
+
+## 判断一颗二叉树是否是完全二叉树
+
+二叉树按宽度来遍历，如果有右子树没有左子树，直接返回FALSE
+如果有一个孩子左右两个孩子不双全，则下一层所有的节点都应该是叶子节点
+
+![image](https://user-images.githubusercontent.com/43565774/142552913-816c0a18-a18a-4709-b68c-8fbcc35c3acc.png)
