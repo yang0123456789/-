@@ -38,3 +38,55 @@
 ![image](https://user-images.githubusercontent.com/43565774/142760807-8415810b-d085-452f-8411-4cb220a1270c.png)
 栈里面的每个节点都是访问过的，因此下次只是弹出来寻找深度下一个节点，如果找到了，就把这两个都加入到栈中，然后访问下一个节点，将下一个节点保存到set中。set的作用就是保存已经访问过的节点。
 
+## 拓扑排序
+
+![image](https://user-images.githubusercontent.com/43565774/142765102-871b3421-eca8-4dfd-87c4-9cabaf885886.png)
+
+## 最小生成树
+p算法和k算法，要求最小生成树,以及要求无向图
+
+k算法;
+![image](https://user-images.githubusercontent.com/43565774/142766500-43e8c50e-8913-4ed3-bed8-4232da9dc2d5.png)
+
+定义一个比较器，然后按从小打大的顺序排列边，刚开始的时候每个节点是一个集合。然后一条一条的取出将边的两个节点加入到一个集合中，如果边的两个节点在一个集合中，就放弃这个边。直到只剩一个集合，也就是所有的节点已经联通了，同时使用到的边就是使集合联通的最小的权重。
+用到的优先队列就是堆排序。
+
+p算法:
+加边，for循环使为了避免森林的问题
+![image](https://user-images.githubusercontent.com/43565774/142767395-d89aa4a6-bcb7-41ff-864d-c22f8d464456.png)
+
+![image](https://user-images.githubusercontent.com/43565774/142767572-6ccb7b09-4da9-4f6e-9400-93ecfc21b498.png)
+这个有时间再回来看吧，后边学了并查集可以替代这个算法。
+
+
+
+## 迪杰斯特拉算法
+![image](https://user-images.githubusercontent.com/43565774/142768080-4cf6efd9-a5c4-4189-823b-9e9d2e63f60e.png)
+
+规定了起点和终点，来算最短的路径
+![image](https://user-images.githubusercontent.com/43565774/142768094-838451a3-d4dd-4e28-9359-3da6e5e989c8.png)
+![image](https://user-images.githubusercontent.com/43565774/142768230-963b952f-f4a1-4ffd-b760-9e45a1adf66d.png)
+
+
+
+
+
+## 并查集 
+看一个图是不是联通的？或者看两个不直接相交的节点是不是有关系的？
+https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
+比较麻烦的操作方式
+![image](https://user-images.githubusercontent.com/43565774/142766323-aeed57a4-6cc2-4de7-ae11-5d8c58c9033b.png)
+![image](https://user-images.githubusercontent.com/43565774/142766335-b428c4cd-4c32-4f7c-b09a-b962d128967b.png)
+
+真正的并查实现方式
+
+
+
+
+
+
+
+
+
+
+
