@@ -142,4 +142,168 @@ while(node2.next!=null&&node2.next.next!=null){
 
 
 ## 给定一棵树的两个节点，求两个节点的最近公共祖先。
+方法一：遍历所有的节点，然后将每个节点的子节点作为hashmap的key，自己作为v放入一个hashmap中。然后从给定的节点开始查hashmap，相当于把根节点到自己的路径放入到一个set中。第二个节点用同样的方法找父节点的链路，每次都看在不在上个节点的set中，在的话就是最近的公共父节点，直接返回。
+
+![image](https://user-images.githubusercontent.com/43565774/142753033-aadb433d-fed7-4689-9be0-7ba18807f976.png)
+![image](https://user-images.githubusercontent.com/43565774/142753113-17170827-9e83-4faf-9ea3-53f90bee0900.png)
+
+方法二：递归的解法：
+![image](https://user-images.githubusercontent.com/43565774/142753126-4ee04f99-0bf2-4442-a495-0316cab72e8b.png)
+
+两种情况：
+- 01和02一个是另一个的祖先。
+- o1和02一个不是另一个的祖先。
+两种情况都走一下代码就能理解了。
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null||root == p || root == q){
+            return root;
+        }
+        TreeNode left = lowestCommonAncestor(root.left,p,q);
+        TreeNode right = lowestCommonAncestor(root.right,p,q);
+        if(left!=null&&right!=null){
+            return root;
+        }
+        return left==null?right:left;
+        
+    }
+}
+```
+## 找到二叉树的后继节点
+![image](https://user-images.githubusercontent.com/43565774/142754947-ef41d590-bd86-4087-8aaa-e44d837ebba4.png)
+
+![image](https://user-images.githubusercontent.com/43565774/142754962-fe17a5d2-e078-4f68-873c-b95b7cb536c0.png)
+![image](https://user-images.githubusercontent.com/43565774/142755385-6bf51a00-5691-4e79-8f84-402014f1a4f3.png)
+
+## 二叉树的序列化和反序列化
+https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/
+![image](https://user-images.githubusercontent.com/43565774/142756102-75b789e5-e277-4cde-8627-213fa40205f9.png)
+
+
+![image](https://user-images.githubusercontent.com/43565774/142756247-068974c6-5e8a-4013-a0d7-817756339d4b.png)
+
+递归的方式：
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        if (root == null) return "null,";
+        String res = root.val+",";
+        res += serialize(root.left);
+        res += serialize(root.right);
+        return res;
+        
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        String[] values = data.split(",");
+        Queue<String> queue= new LinkedList<>();
+        for(int i=0;i<values.length;i++){
+            queue.add(values[i]);
+        }
+        
+        return reconPreOrder(queue);
+    }
+
+    public static TreeNode reconPreOrder(Queue<String> queue){
+        String val = queue.poll();
+        if(val.equals("null")){
+            return null;
+        }
+        TreeNode head = new TreeNode(Integer.valueOf(val));
+        head.left=reconPreOrder(queue);
+        head.right=reconPreOrder(queue);
+        return head;
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec codec = new Codec();
+// codec.deserialize(codec.serialize(root));
+```
+
+非递归的方式
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+          if(root == null) return "[]";
+        StringBuilder res = new StringBuilder("[");
+        Queue<TreeNode> queue = new LinkedList<>() {{ add(root); }};
+        while(!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            if(node != null) {
+                res.append(node.val + ",");
+                queue.add(node.left);
+                queue.add(node.right);
+            }
+            else res.append("null,");
+        }
+        res.deleteCharAt(res.length() - 1);
+        res.append("]");
+        return res.toString();
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+          if(data.equals("[]")) return null;
+        String[] vals = data.substring(1, data.length() - 1).split(",");
+        TreeNode root = new TreeNode(Integer.parseInt(vals[0]));
+        Queue<TreeNode> queue = new LinkedList<>() {{ add(root); }};
+        int i = 1;
+        while(!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            if(!vals[i].equals("null")) {
+                node.left = new TreeNode(Integer.parseInt(vals[i]));
+                queue.add(node.left);
+            }
+            i++;
+            if(!vals[i].equals("null")) {
+                node.right = new TreeNode(Integer.parseInt(vals[i]));
+                queue.add(node.right);
+            }
+            i++;
+        }
+        return root;
+
+    }
+}
+
+```
+
+
+![image](https://user-images.githubusercontent.com/43565774/142756826-89cdd006-6b38-4c4c-bfc6-a9146fc92b15.png)
+![image](https://user-images.githubusercontent.com/43565774/142756841-53102096-a643-4c93-9c4f-0fdaf98fc261.png)
+中序遍历就是 纸条显示的内容  
 
