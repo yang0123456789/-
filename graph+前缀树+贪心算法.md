@@ -83,6 +83,9 @@ https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
 
 
 
+# 前缀树：
+![image](https://user-images.githubusercontent.com/43565774/143037259-2468df74-7705-4712-9494-d1114eb3f648.png)
+![image](https://user-images.githubusercontent.com/43565774/143049044-070d4058-d653-448b-8d32-fbe3f6a35834.png)
 
 
 
