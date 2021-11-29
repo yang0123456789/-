@@ -89,6 +89,25 @@ https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
 
 
 
+# 暴力递归
+
+## 汉诺塔问题
+![image](https://user-images.githubusercontent.com/43565774/143888259-7d85ba99-28c5-4d52-9597-930321814669.png)
+![image](https://user-images.githubusercontent.com/43565774/143888848-1c307afd-9f27-49f5-8ef7-3a60f483b3d9.png)
+
+假设有n个塔，第一个柱子为 from，中间为other，第三个为to。
+假设我们的主方法为p(n,from,to,other),三个参数表示，分别是第n个汉诺塔，从 from柱子，移动到to柱子，辅助柱子使other。
+我们先让
+- '1->n-1'的塔移动到中间的位置，p(n-1,from,other,to)
+- 再让，n号塔移动到第三个位置，直接移动，不需要子过程,这个时候from空的。
+- 然后，让n-1号塔移动到第三个位置，p(n-1,other,to,from)
+
+代码;
+![image](https://user-images.githubusercontent.com/43565774/143890849-3e141f05-8372-4088-8fff-ea8ff9f5d6d3.png)
+
+
+
+相当于上面
 
 
 
