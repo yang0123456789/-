@@ -106,9 +106,11 @@ https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
 ![image](https://user-images.githubusercontent.com/43565774/143890849-3e141f05-8372-4088-8fff-ea8ff9f5d6d3.png)
 
 
+## 字符串的全排列
 
-相当于上面
-
+![image](https://user-images.githubusercontent.com/43565774/143900031-501bca4c-d518-4805-9c51-1e3fe0798142.png)
+![image](https://user-images.githubusercontent.com/43565774/143900255-ce45adb5-f214-442c-954f-ddbb82dd19d0.png)
+# 打印一个字符的全部排列，要求不出现重复的排列
 
 
 
