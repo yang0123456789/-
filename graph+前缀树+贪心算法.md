@@ -111,6 +111,11 @@ https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
 ![image](https://user-images.githubusercontent.com/43565774/143900031-501bca4c-d518-4805-9c51-1e3fe0798142.png)
 ![image](https://user-images.githubusercontent.com/43565774/143900255-ce45adb5-f214-442c-954f-ddbb82dd19d0.png)
 # 打印一个字符的全部排列，要求不出现重复的排列
+全排列可以重复
+![image](https://user-images.githubusercontent.com/43565774/143968206-bb4dc013-e040-47c9-965c-00818439cdbf.png)
+全排列不重复
+![image](https://user-images.githubusercontent.com/43565774/143968369-ad319511-0448-4af5-b7b2-e010552881d7.png)
 
+visit记录这个位置是否已经被当前字母试过全排列试过，每次都重新初始化visit，这样可以在同一个位置的下一个位置去跟别的位置交换的时候看是不是重复过。
 
 
