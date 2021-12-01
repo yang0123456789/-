@@ -67,6 +67,9 @@ p算法:
 ![image](https://user-images.githubusercontent.com/43565774/142768094-838451a3-d4dd-4e28-9359-3da6e5e989c8.png)
 ![image](https://user-images.githubusercontent.com/43565774/142768230-963b952f-f4a1-4ffd-b760-9e45a1adf66d.png)
 
+![image](https://user-images.githubusercontent.com/43565774/144153411-dac2e1b5-5a65-41ec-bedf-e718171fb0e6.png)
+![Screenshot_2021-11-29-13-04-31-099_tv danmaku bil](https://user-images.githubusercontent.com/43565774/144153422-cc3c5bef-fce4-49b7-8101-d3a073755fd8.jpg)
+
 
 
 
@@ -117,5 +120,43 @@ https://zhuanlan.zhihu.com/p/93647900/ 并查集的介绍
 ![image](https://user-images.githubusercontent.com/43565774/143968369-ad319511-0448-4af5-b7b2-e010552881d7.png)
 
 visit记录这个位置是否已经被当前字母试过全排列试过，每次都重新初始化visit，这样可以在同一个位置的下一个位置去跟别的位置交换的时候看是不是重复过。
+
+## 纸牌游戏
+![image](https://user-images.githubusercontent.com/43565774/144153568-55fad041-1288-495d-83a9-a6c7b49342a8.png)
+![image](https://user-images.githubusercontent.com/43565774/144153550-4d8c1b35-d1b0-4975-ba95-4f44c8a41d13.png)
+
+## 不借助额外空间把栈逆序
+
+![image](https://user-images.githubusercontent.com/43565774/144153627-5e2c13ed-118f-4cd3-83ea-80616ddca49b.png)
+![image](https://user-images.githubusercontent.com/43565774/144153637-838f8871-2281-4b38-96c1-9e0d0cba2779.png)
+
+## 数字转化为纸牌序列
+![image](https://user-images.githubusercontent.com/43565774/144153666-c610645b-0231-46fc-9bd0-f1059b0ef7cb.png)
+![image](https://user-images.githubusercontent.com/43565774/144153678-50a6fb59-934d-4f54-bae0-c8b6b1eabffe.png)
+![image](https://user-images.githubusercontent.com/43565774/144153691-eee60ac0-1e86-434e-a133-61be3ed194c1.png)
+
+## 货物的最大价值
+![image](https://user-images.githubusercontent.com/43565774/144153726-3e7b6b3e-2b46-41bd-a018-3074b4078568.png)
+
+![image](https://user-images.githubusercontent.com/43565774/144153745-1426e5ba-e9e4-4e6d-9073-51248ebcbd39.png)
+![image](https://user-images.githubusercontent.com/43565774/144153762-98655ae6-a75f-4b39-b40c-f9fa689fb4df.png)
+![image](https://user-images.githubusercontent.com/43565774/144153787-95b9ec04-7759-4a5e-b81a-82df660c92b9.png)
+
+## n皇后问题
+![image](https://user-images.githubusercontent.com/43565774/144153808-dcad963e-ae81-43ed-b05f-d480de2401bf.png)
+![image](https://user-images.githubusercontent.com/43565774/144153817-bfcd82ab-1e70-4a3c-9713-e35991ba299c.png)
+
+
+
+![image](https://user-images.githubusercontent.com/43565774/144154459-ca341852-9d1f-40ad-8a27-d5bfc8b0fb8f.png)
+![image](https://user-images.githubusercontent.com/43565774/144154742-1b451761-2ed2-4e48-bc5c-d71f75a5061e.png)
+
+优化：
+![image](https://user-images.githubusercontent.com/43565774/144154985-54ea35d8-11a6-481b-a243-8dd8c4dfe2b3.png)
+
+![image](https://user-images.githubusercontent.com/43565774/144155019-15c3e157-96eb-4b1e-b848-30d9a34cba2a.png)
+
+
+回头再学习这一部分
 
 
