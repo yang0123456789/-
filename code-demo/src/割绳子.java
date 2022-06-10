@@ -1,4 +1,4 @@
-public class Main {
+public class 割绳子 {
     public static int process(int[] arr, int L) {
         if (arr == null || arr.length == 0 || L <= 0) {
             return 0;
