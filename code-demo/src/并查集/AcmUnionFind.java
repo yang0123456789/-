@@ -70,7 +70,7 @@ public class AcmUnionFind {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         int size = scanner.nextInt();
