@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73d4458a-aada-472a-9c94-56e75dc07919" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code-demo/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/code-demo/src/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/哈希函数、哈希表.md" beforeDir="false" afterPath="$PROJECT_DIR$/哈希函数、哈希表.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.快排">
+    <configuration name="快排" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="快排" />
+      <module name="suanfashipinxuexibiji" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FastUnionFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="并查集.FastUnionFind" />
       <module name="suanfashipinxuexibiji" />
@@ -100,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.快排" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.FastUnionFind" />
         <item itemvalue="Application.UnionFind" />
@@ -133,6 +140,7 @@
       <workItem from="1657159039159" duration="695000" />
       <workItem from="1657588795410" duration="1272000" />
       <workItem from="1658971366682" duration="2762000" />
+      <workItem from="1661130752494" duration="148000" />
     </task>
     <servers />
   </component>
@@ -140,25 +148,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1659019970525">
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1661130901421">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1659019970525" />
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1661130901421" />
     <state width="2005" height="257" key="GridCell.Tab.0.bottom/0.0.1536.816/1920.-525.2048.1104@1920.-525.2048.1104" timestamp="1657589413011" />
-    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1659019970525">
+    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1661130901421">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1659019970525" />
+    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1661130901421" />
     <state width="2005" height="257" key="GridCell.Tab.0.center/0.0.1536.816/1920.-525.2048.1104@1920.-525.2048.1104" timestamp="1657589413010" />
-    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1659019970525">
+    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1661130901421">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1659019970525" />
+    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1661130901421" />
     <state width="2005" height="257" key="GridCell.Tab.0.left/0.0.1536.816/1920.-525.2048.1104@1920.-525.2048.1104" timestamp="1657589413009" />
-    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1659019970525">
+    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1661130901421">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1659019970525" />
+    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.816/1920.-525.2048.1104@0.0.1536.816" timestamp="1661130901421" />
     <state width="2005" height="257" key="GridCell.Tab.0.right/0.0.1536.816/1920.-525.2048.1104@1920.-525.2048.1104" timestamp="1657589413011" />
   </component>
 </project>
